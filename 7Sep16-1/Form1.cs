@@ -16,5 +16,18 @@ namespace _7Sep16_1
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lbxFlavors.Items.Add("vanilla");
+            lbxFlavors.Items.Add("chocolate");
+            lbxFlavors.Items.Add("strawberry");
+            lbxFlavors.Items.Add("rocky road");
+        }
     }
 }
