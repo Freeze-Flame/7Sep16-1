@@ -31,16 +31,20 @@
             this.lbxFlavors = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lblFlavor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbxFlavors
             // 
             this.lbxFlavors.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbxFlavors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbxFlavors.FormattingEnabled = true;
+            this.lbxFlavors.ItemHeight = 20;
             this.lbxFlavors.Location = new System.Drawing.Point(15, 35);
             this.lbxFlavors.Name = "lbxFlavors";
-            this.lbxFlavors.Size = new System.Drawing.Size(133, 121);
+            this.lbxFlavors.Size = new System.Drawing.Size(133, 104);
             this.lbxFlavors.TabIndex = 0;
+            this.lbxFlavors.SelectedIndexChanged += new System.EventHandler(this.lbxFlavors_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -62,11 +66,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // lblFlavor
+            // 
+            this.lblFlavor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFlavor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlavor.Location = new System.Drawing.Point(12, 159);
+            this.lblFlavor.Name = "lblFlavor";
+            this.lblFlavor.Size = new System.Drawing.Size(260, 23);
+            this.lblFlavor.TabIndex = 3;
+            this.lblFlavor.Click += new System.EventHandler(this.lblFlavor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.lblFlavor);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbxFlavors);
@@ -83,6 +98,7 @@
         private System.Windows.Forms.ListBox lbxFlavors;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblFlavor;
     }
 }
 

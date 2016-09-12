@@ -28,6 +28,18 @@ namespace _7Sep16_1
             lbxFlavors.Items.Add("chocolate");
             lbxFlavors.Items.Add("strawberry");
             lbxFlavors.Items.Add("rocky road");
+            lbxFlavors.Items.Add("fear sundae");
+            lbxFlavors.Items.Add("peach");
+        }
+
+        private void lblFlavor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbxFlavors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblFlavor.Text = lbxFlavors.SelectedItem.ToString();
         }
     }
 }
